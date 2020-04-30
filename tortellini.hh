@@ -312,6 +312,14 @@ public:
         inline std::map<std::string, std::string, case_insensitive>::size_type size() const {
             return _mapref.size();
         }
+        
+        std::map<std::string, std::string, case_insensitive>::const_iterator begin() const {
+            return _mapref.begin();
+        }
+        
+        std::map<std::string, std::string, case_insensitive>::const_iterator end() const {
+            return _mapref.end();
+        }
     };
 
 private:
