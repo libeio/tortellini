@@ -309,7 +309,7 @@ public:
             return value(_mapref[key]);
         }
         
-        inline std::map<std::string, std::string, case_insensitive>::size_type size() {
+        inline std::map<std::string, std::string, case_insensitive>::size_type size() const {
             return _mapref.size();
         }
     };
